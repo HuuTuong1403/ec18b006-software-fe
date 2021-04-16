@@ -1,0 +1,29 @@
+<div class="container">
+  <form method="POST" action='http://localhost:3000/image-upload' enctype="multipart/form-data">
+    <mat-form-field class="input-title">
+      <mat-label>Set Title Image</mat-label>
+      <input placeholder="Ex. Animals" matInput required #titleInput>
+    </mat-form-field>
+    <h1>
+      Choose Image
+    </h1>
+    <label for="ImageUpload">Upload your Image</label><br>
+    <input type="file" id="Image" name="Image" class="upload" (change)="onFileChange($event)" #fileInput>
+    <div class="button-below">
+      <button type="submit" class="submit" (click)="onSubmit($event)">Submit<i class="fa fa-spinner fa-spin fa-fw"></i></button>
+      <button type="button" class="clear" (click)="clearFile()">Clear</button>
+    </div>
+  </form>
+  <div class="list">
+    <mat-progress-bar class="progress-bar" mode="indeterminate"></mat-progress-bar>
+  </div>
+
+</div>
+<div class="list">
+  <div class="image-list">
+    <h1>Image List</h1>
+    <ng-image-slider [images]="imageObject" #nav></ng-image-slider>
+  </div>
+</div>
+
+

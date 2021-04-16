@@ -1,0 +1,74 @@
+h1{
+  font-weight: bold;
+}
+
+label{
+  font-size: 17px;
+}
+
+.container{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.input-title{
+  width: 35%;
+  font-size: 20px;
+}
+
+.upload {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.clear {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.submit {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+.button-below{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.image-list{
+  margin-top: 50px;
+  text-align: center;
+  width: 70%;
+}
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar{
+  margin-top: 20px;
+  visibility: hidden;
+  width: 50%;
+}
